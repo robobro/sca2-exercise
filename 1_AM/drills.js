@@ -10,12 +10,15 @@ const tokenize = str => {
 
 const reverse = str => {
   // TODO - write a function which reverses the string
-  let newstring = "";
-for(c=0;c<str.length;c++){
+  let newstring = [];
+ let arrstr = str.split("");
+ const yuh = arrstr.length + 1;
+for(c=0;c<yuh;c++){
 // ~~defunct~~ newstring = newstring + str(str.length-c)
-newstring.push(str(str.length-c))
+newstring.push(arrstr[arrstr.length-c])
 }
-console.log(newstring)
+let brurray = newstring.join("");
+return(brurray)
 };
 
 const uniqueOnes = arr => {
@@ -27,9 +30,9 @@ const factorial = num => {
   let f =1;
   for(let c = 1; c < num+1; c++)
   {
-    f += c
+    f = f*c
   }
-  console.log(f)
+  return(f)
 };
 
 const zip = (arr1, arr2) => {
@@ -60,3 +63,4 @@ assert([2, 3][0] === 2);
 // asssert (reverse("3df") === "fd3")
 console.log(factorial(5))
 console.log(reverse("obama"))
+console.log(reverse("Bruh!?!?"))
