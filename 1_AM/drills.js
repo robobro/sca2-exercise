@@ -4,10 +4,18 @@ const assert = require("assert");
 
 const tokenize = str => {
   // TODO - write a function which converts a multi-word string into an array of words
+  this.str = s
+
 };
 
 const reverse = str => {
   // TODO - write a function which reverses the string
+  let newstring = "";
+for(c=0;c<str.length;c++){
+// ~~defunct~~ newstring = newstring + str(str.length-c)
+newstring.push(str(str.length-c))
+}
+console.log(newstring)
 };
 
 const uniqueOnes = arr => {
@@ -16,6 +24,12 @@ const uniqueOnes = arr => {
 
 const factorial = num => {
   // TODO - write a function which returns the factorial of a positive integer
+  let f =1;
+  for(let c = 1; c < num+1; c++)
+  {
+    f += c
+  }
+  console.log(f)
 };
 
 const zip = (arr1, arr2) => {
@@ -44,3 +58,5 @@ assert(1 < 2);
 assert(1 + 2 === 3);
 assert([2, 3][0] === 2);
 // asssert (reverse("3df") === "fd3")
+console.log(factorial(5))
+console.log(reverse("obama"))
