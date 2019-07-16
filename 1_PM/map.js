@@ -2,13 +2,13 @@
 // the output is [0, 3, 6, 9, 12]
 
 const arr = [0, 1, 2, 3, 4];
-
 const triple = () => {
-  // TODO
+  const bruh = [];
+  for(c=0;c<arr.length;c++)
+  {bruh.push(arr[c]*3)}
+  return bruh;
 };
 
-Array.prototype.map = function(fun) {
-  // TODO
-};
 
-console.log(arr.map(triple));
+
+console.log(triple(arr));

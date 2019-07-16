@@ -4,7 +4,17 @@ const assert = require("assert");
 
 const tokenize = str => {
   // TODO - write a function which converts a multi-word string into an array of words
-  this.str = s
+   /* why tf i tried to do it like this, I do not know.   let phineas = [];
+      let rollercoaster = str.split("");
+      const TakeL = rollercoaster.length;
+    for(c=-1;c<TakeL;c++){
+      if(rollercoaster[c]!=" ") {
+      phineas.push(rollercoaster[c])
+      }
+      else{}
+    }*/
+    let frack = str.split();
+    return frack;  
 
 };
 
@@ -64,3 +74,4 @@ assert([2, 3][0] === 2);
 console.log(factorial(5))
 console.log(reverse("obama"))
 console.log(reverse("Bruh!?!?"))
+console.log(tokenize("my name is jeff bro"))

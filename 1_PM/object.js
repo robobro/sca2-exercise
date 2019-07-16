@@ -3,5 +3,14 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
-  return false;
+  if(obj){
+  return false;}
+  else
+  {return true;}
 };
+
+console.log(hasFalsyValue(0));
+console.log(hasFalsyValue(NaN));
+console.log(hasFalsyValue(undefined));
+console.log(hasFalsyValue(42));
+console.log(hasFalsyValue({}));
